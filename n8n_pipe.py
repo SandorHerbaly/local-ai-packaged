@@ -12,14 +12,15 @@ from pydantic import BaseModel, Field
 import os
 import time
 import requests
+import asyncio
 
 
 class Pipe:
     class Valves(BaseModel):
         n8n_url: str = Field(
-            default="https://n8n.[your domain].com/webhook/[your webhook URL]"
+            default="http://localhost:5678/webhook-test/fbe5e756-ec58-48cb-a6d2-7f165bcc244d"
         )
-        n8n_bearer_token: str = Field(default="...")
+        n8n_bearer_token: str = Field(default="...")  # Add meg, ha van token
         input_field: str = Field(default="chatInput")
         response_field: str = Field(default="output")
         emit_interval: float = Field(
@@ -124,3 +125,20 @@ class Pipe:
 
         await self.emit_status(__event_emitter__, "info", "Complete", True)
         return n8n_response
+
+
+if __name__ == "__main__":
+    async def main():
+        # Példa bemenet
+        example_body = {
+            "messages": [
+                {"content": "Prompt: Mi a fővárosa Magyarországnak?"}
+            ]
+        }
+        example_user = {"id": "test_user"}
+
+        pipe = Pipe()
+        response = await pipe.pipe(example_body, __user__=example_user)
+        print("Response:", response)
+
+    asyncio.run(main())

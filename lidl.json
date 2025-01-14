@@ -1,0 +1,301 @@
+{
+  "oldalak": {
+      "1. oldal": {
+          "termekek_szama": 6,
+          "termekek": [
+              {
+                  "azonosito": "1/1",
+                  "nev": "Kakaós csiga",
+                  "informaciok": {
+                      "kiszereles": "120 g",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 189,
+                      "akcios_ar": 129,
+                      "akcio_merteke_szazalekban": -31,
+                      "megtakaritas_osszege": 60,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "1/2",
+                  "nev": "Körteital",
+                  "informaciok": {
+                      "kiszereles": "1 l",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "Minden második termék akciós áron",
+                      "eredeti_ar": 479,
+                      "akcios_ar": 119,
+                      "akcio_merteke_szazalekban": -75,
+                      "megtakaritas_osszege": 360,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "1/3",
+                  "nev": "Sertésvagdalt",
+                  "informaciok": {
+                      "kiszereles": "340 g",
+                      "jellemzok": ["87% sertéshústartalom"],
+                      "akcios_feltetelek": "Minden második termék akciós áron",
+                      "eredeti_ar": 1199,
+                      "akcios_ar": 479,
+                      "akcio_merteke_szazalekban": -60,
+                      "megtakaritas_osszege": 720,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "1/4",
+                  "nev": "Tonhalsaláta",
+                  "informaciok": {
+                      "kiszereles": "220 g",
+                      "jellemzok": ["Mexikói / mediterrán"],
+                      "akcios_feltetelek": "Minden második termék akciós áron",
+                      "eredeti_ar": 999,
+                      "akcios_ar": 399,
+                      "akcio_merteke_szazalekban": -60,
+                      "megtakaritas_osszege": 600,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "1/5",
+                  "nev": "Áfonya",
+                  "informaciok": {
+                      "kiszereles": "125 g",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 699,
+                      "akcios_ar": 399,
+                      "akcio_merteke_szazalekban": -42,
+                      "megtakaritas_osszege": 300,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "1/6",
+                  "nev": "Téliszalámi",
+                  "informaciok": {
+                      "kiszereles": "100 g",
+                      "jellemzok": ["Csemege / paprikás"],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 769,
+                      "akcios_ar": 529,
+                      "akcio_merteke_szazalekban": -31,
+                      "megtakaritas_osszege": 240,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              }
+          ],
+          "egyeb_informaciok": [
+              "Az árak a dekorációt nem tartalmazzák.",
+              "Nyomdai hibákért felelősséget nem vállalunk."
+          ]
+      },
+      "2. oldal": {
+          "termekek_szama": 1,
+          "termekek": [
+              {
+                  "azonosito": "2/1",
+                  "nev": "Ementáli sajt",
+                  "informaciok": {
+                      "kiszereles": "400 g",
+                      "jellemzok": ["45% zsírtartalom"],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 1699,
+                      "akcios_ar": 1219,
+                      "akcio_merteke_szazalekban": -28,
+                      "megtakaritas_osszege": 480,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              }
+          ],
+          "egyeb_informaciok": [
+              "Minden második termék kedvezménnyel.",
+              "Nyomdai hibákért felelősséget nem vállalunk."
+          ]
+      },
+      "3. oldal": {
+          "termekek_szama": 1,
+          "termekek": [
+              {
+                  "azonosito": "3/1",
+                  "nev": "Olívaolaj spray",
+                  "informaciok": {
+                      "kiszereles": "200 ml",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "Minden második termék akciós áron",
+                      "eredeti_ar": 2499,
+                      "akcios_ar": 899,
+                      "akcio_merteke_szazalekban": -64,
+                      "megtakaritas_osszege": 1600,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              }
+          ],
+          "egyeb_informaciok": [
+              "Az árak a dekorációt nem tartalmazzák.",
+              "Nyomdai hibákért felelősséget nem vállalunk."
+          ]
+      },
+      "4. oldal": {
+          "termekek_szama": 5,
+          "termekek": [
+              {
+                  "azonosito": "4/1",
+                  "nev": "Tojásparadicsom",
+                  "informaciok": {
+                      "kiszereles": "500 g",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 1299,
+                      "akcios_ar": 899,
+                      "akcio_merteke_szazalekban": -30,
+                      "megtakaritas_osszege": 400,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "4/2",
+                  "nev": "Pomelo",
+                  "informaciok": {
+                      "kiszereles": "db",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 1199,
+                      "akcios_ar": 799,
+                      "akcio_merteke_szazalekban": -33,
+                      "megtakaritas_osszege": 400,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "4/3",
+                  "nev": "Kaliforniai paprika",
+                  "informaciok": {
+                      "kiszereles": "1 kg",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 1499,
+                      "akcios_ar": 1199,
+                      "akcio_merteke_szazalekban": -20,
+                      "megtakaritas_osszege": 300,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "4/4",
+                  "nev": "Mag nélküli piros szőlő",
+                  "informaciok": {
+                      "kiszereles": "500 g",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 1299,
+                      "akcios_ar": 899,
+                      "akcio_merteke_szazalekban": -30,
+                      "megtakaritas_osszege": 400,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "4/5",
+                  "nev": "Csiperkegomba",
+                  "informaciok": {
+                      "kiszereles": "750 g",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 999,
+                      "akcios_ar": 749,
+                      "akcio_merteke_szazalekban": -25,
+                      "megtakaritas_osszege": 250,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              }
+          ],
+          "egyeb_informaciok": [
+              "Nyomdai hibákért felelősséget nem vállalunk.",
+              "Az árak a dekorációt nem tartalmazzák."
+          ]
+      },
+      "5. oldal": {
+          "termekek_szama": 5,
+          "termekek": [
+              {
+                  "azonosito": "5/1",
+                  "nev": "Ciabatta",
+                  "informaciok": {
+                      "kiszereles": "300 g",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 399,
+                      "akcios_ar": 319,
+                      "akcio_merteke_szazalekban": -20,
+                      "megtakaritas_osszege": 80,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "5/2",
+                  "nev": "Kalács",
+                  "informaciok": {
+                      "kiszereles": "600 g",
+                      "jellemzok": ["Vajas-mézes"],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 1299,
+                      "akcios_ar": 1299,
+                      "akcio_merteke_szazalekban": 0,
+                      "megtakaritas_osszege": 0,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "5/3",
+                  "nev": "Croissant",
+                  "informaciok": {
+                      "kiszereles": "60 g",
+                      "jellemzok": ["Creme Brulée töltelékkel"],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 199,
+                      "akcios_ar": 199,
+                      "akcio_merteke_szazalekban": 0,
+                      "megtakaritas_osszege": 0,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "5/4",
+                  "nev": "Vajas toast kenyér",
+                  "informaciok": {
+                      "kiszereles": "500 g",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 469,
+                      "akcios_ar": 339,
+                      "akcio_merteke_szazalekban": -27,
+                      "megtakaritas_osszege": 130,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              },
+              {
+                  "azonosito": "5/5",
+                  "nev": "Kakaós csiga",
+                  "informaciok": {
+                      "kiszereles": "120 g",
+                      "jellemzok": [],
+                      "akcios_feltetelek": "",
+                      "eredeti_ar": 189,
+                      "akcios_ar": 129,
+                      "akcio_merteke_szazalekban": -31,
+                      "megtakaritas_osszege": 60,
+                      "akcio_idotartama": "2025.01.09 - 2025.01.12"
+                  }
+              }
+          ],
+          "egyeb_informaciok": [
+              "Nyomdai hibákért felelősséget nem vállalunk.",
+              "Az árak a dekorációt nem tartalmazzák."
+          ]
+      }
+  }
+}

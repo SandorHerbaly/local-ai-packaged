@@ -1,0 +1,7 @@
+*.pem
+letsencrypt/
+letsencrypt/*
+privkey*
+cert*
+chain*
+fullchain*

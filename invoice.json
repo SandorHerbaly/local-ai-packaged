@@ -1,0 +1,278 @@
+[
+  {
+    "invoice_number": "Z182401588",
+    "vendor": {
+      "name": "WESTech, spol. s r.o.",
+      "address": "Stará Vajnorská 17, Bratislava, 831 04, Slovakia",
+      "reg_num": "35796111",
+      "vat_id": "SK2020245557",
+      "vat_id_sk": "2020245557",
+      "phone": "+421 2 4445 4090",
+      "bank": "ČSOB, a.s. (HUF)",
+      "email": "rma@westech.sk",
+      "swift": "CEKOSKBX",
+      "residence": "WESTech, spol. s r.o., Stará Vajnorská 17, Bratislava, 831 04",
+      "account": "SK5075000000001025050623",
+      "vs": "182401588",
+      "cs": "0008"
+    },
+    "customer": {
+      "id": "434515",
+      "name": "WESTech HU Kft.",
+      "address": "Váci út 91 IV. Emelet Budapest, Hungary",
+      "reg_num": "0109978684",
+      "phone": "+36303636614",
+      "vat_id": "HU23807341",
+      "email": "horvath@westech.hu"
+    },
+    "delivery_address": {
+      "name": "Dronesys Kft.",
+      "contact_person": "Daubner Csaba",
+      "address": "Szántóföld utca 2/a., Budapest, 1151",
+      "phone": "+36 30 555 4043"
+    },
+    "dates": {
+      "lay_out_date": "26.7.2024",
+      "taxable_feeding_date": "26.7.2024",
+      "due_date": "24.9.2024"
+    },
+    "payment": {
+      "method": "Wire Transfer",
+      "transport": "GLS - bez dokladov",
+      "created_by": "B2C HU Webservice",
+      "invoiced": "without VAT",
+      "order_no": "1102438299 (COR2401021)"
+    },
+    "items": [
+      {
+        "name": "DJI OM 6",
+        "code": "GTDJICPOS0000021301HU",
+        "warranty_period": "12 month",
+        "serial_numbers": [
+          "5W3VM24120201XCL",
+          "5W3VM2412220215X",
+          "5W3VM24122202169",
+          "5W3VM24122202165",
+          "5W3VM2412220216T",
+          "5W3VM24120201XEB",
+          "5W3VM2412220217X",
+          "5W3VM24120201XDZ",
+          "5W3VM24120201XDR",
+          "5W3VM24120201XCC"
+        ],
+        "quantity": 10,
+        "weight_kg": 3.000,
+        "price_per_unit_without_fees_without_vat": 44691.321,
+        "price_with_fees_without_vat": 446913.21,
+        "vat_percent": "0 %",
+        "total": 446913.21
+      }
+    ],
+    "total_value_huf": 446914.00,
+    "pre_paid": 0.00,
+    "total_to_be_paid": 446914.00,
+    "total_weight_kg": 3.000,
+     "vat_exemption_text": "Dodanie tovarov a služieb je oslobodené od dane z pridanej hodnoty podľa § 43 zákona č. 222/2004 Z.z. zo dňa 6.4.2004. Povinnosť priznať DPH prechádza na kupujúceho.",
+    "eu_directive_text": "According to the title  IV, chapter 2,article 21,  of the directive of the European comitee n.112/2006/EC, is the consignee of the goods which is mentioned on the invoice, or other person, which si designated or accepted by the EU member state into which the goods are imported, liable to pay the VAT mentioned on the invoice."
+  },
+  {
+    "invoice_number": "Z182401589",
+    "vendor": {
+      "name": "WESTech, spol. s r.o.",
+      "address": "Stará Vajnorská 17, Bratislava, 831 04, Slovakia",
+      "reg_num": "35796111",
+      "vat_id": "SK2020245557",
+      "vat_id_sk": "2020245557",
+      "phone": "+421 2 4445 4090",
+      "bank": "ČSOB, a.s. (HUF)",
+      "email": "rma@westech.sk",
+      "swift": "CEKOSKBX",
+      "residence": "WESTech, spol. s r.o., Stará Vajnorská 17, Bratislava, 831 04",
+      "account": "SK5075000000001025050623",
+      "vs": "182401589",
+      "cs": "0008"
+    },
+    "customer": {
+      "id": "434515",
+      "name": "WESTech HU Kft.",
+      "address": "Váci út 91 IV. Emelet Budapest, Hungary",
+      "reg_num": "0109978684",
+      "phone": "+36303636614",
+      "vat_id": "HU23807341",
+      "email": "horvath@westech.hu"
+    },
+    "delivery_address": {
+      "name": "Magnew Kft.",
+      "contact_person": "Für Attila",
+      "address": "Öv utca 35-37, Budapest, 1141",
+      "phone": "+36 30 510 9823"
+    },
+    "dates": {
+      "lay_out_date": "26.7.2024",
+      "taxable_feeding_date": "26.7.2024",
+      "due_date": "24.9.2024"
+    },
+    "payment": {
+      "method": "Wire Transfer",
+      "transport": "GLS - bez dokladov",
+       "created_by": "B2C HU Webservice",
+      "invoiced": "without VAT",
+      "order_no": "1102434061 (COR2400904)"
+    },
+    "items": [
+      {
+        "name": "DJI Air 3 Fly More Combo (DJI RC 2)",
+        "code": "GTDJICPMA0000069304HU",
+        "warranty_period": "12 month",
+        "serial_numbers": [
+          "1581F6N8A244KML38SP6"
+        ],
+        "quantity": 1,
+        "weight_kg": 0.595,
+        "price_per_unit_without_fees_without_vat": 430664.662,
+        "price_with_fees_without_vat": 430664.66,
+        "vat_percent": "0 %",
+        "total": 430664.66
+      }
+    ],
+    "total_value_huf": 430665.00,
+    "pre_paid": 0.00,
+    "total_to_be_paid": 430665.00,
+    "total_weight_kg": 0.595,
+     "vat_exemption_text": "Dodanie tovarov a služieb je oslobodené od dane z pridanej hodnoty podľa § 43 zákona č. 222/2004 Z.z. zo dňa 6.4.2004. Povinnosť priznať DPH prechádza na kupujúceho.",
+     "eu_directive_text": "According to the title  IV, chapter 2,article 21,  of the directive of the European comitee n.112/2006/EC, is the consignee of the goods which is mentioned on the invoice, or other person, which si designated or accepted by the EU member state into which the goods are imported, liable to pay the VAT mentioned on the invoice."
+  },
+   {
+    "invoice_number": "Z182401590",
+    "vendor": {
+      "name": "WESTech, spol. s r.o.",
+      "address": "Stará Vajnorská 17, Bratislava, 831 04, Slovakia",
+      "reg_num": "35796111",
+      "vat_id": "SK2020245557",
+       "vat_id_sk": "2020245557",
+      "phone": "+421 2 4445 4090",
+      "bank": "ČSOB, a.s. (HUF)",
+      "email": "rma@westech.sk",
+      "swift": "CEKOSKBX",
+      "residence": "WESTech, spol. s r.o., Stará Vajnorská 17, Bratislava, 831 04",
+      "account": "SK5075000000001025050623",
+       "vs": "182401590",
+      "cs": "0008"
+    },
+    "customer": {
+      "id": "434515",
+      "name": "WESTech HU Kft.",
+      "address": "Váci út 91 IV. Emelet Budapest, Hungary",
+      "reg_num": "0109978684",
+      "phone": "+36303636614",
+      "vat_id": "HU23807341",
+      "email": "horvath@westech.hu"
+    },
+    "delivery_address": {
+      "name": "Daubner Csaba Showroom/Bemutatóterem",
+      "address": "Szántóföld utca 2/a. 6. bemutatóterem, Budapest, 1151",
+      "phone": "+36 30 555 4043"
+    },
+    "dates": {
+      "lay_out_date": "26.7.2024",
+      "taxable_feeding_date": "26.7.2024",
+      "due_date": "24.9.2024"
+    },
+    "payment": {
+      "method": "Wire Transfer",
+      "transport": "GLS - bez dokladov",
+       "created_by": "B2C HU Webservice",
+      "invoiced": "without VAT",
+      "order_no": "1102436084 (COR2400964)"
+    },
+    "items": [
+      {
+        "name": "DJI Air 3 Fly More Combo (DJI RC 2)",
+        "code": "GTDJICPMA0000069304HU",
+        "warranty_period": "12 month",
+        "serial_numbers": [
+          "1581F6N8A244JML346UN",
+           "1581F6N8A244JML3P02K"
+        ],
+        "quantity": 2,
+        "weight_kg": 1.190,
+        "price_per_unit_without_fees_without_vat": 425527.872,
+        "price_with_fees_without_vat": 851055.74,
+        "vat_percent": "0 %",
+        "total": 851055.74
+      }
+    ],
+    "total_value_huf": 851056.00,
+    "pre_paid": 0.00,
+    "total_to_be_paid": 851056.00,
+    "total_weight_kg": 1.190,
+     "vat_exemption_text": "Dodanie tovarov a služieb je oslobodené od dane z pridanej hodnoty podľa § 43 zákona č. 222/2004 Z.z. zo dňa 6.4.2004. Povinnosť priznať DPH prechádza na kupujúceho.",
+      "eu_directive_text": "According to the title  IV, chapter 2,article 21,  of the directive of the European comitee n.112/2006/EC, is the consignee of the goods which is mentioned on the invoice, or other person, which si designated or accepted by the EU member state into which the goods are imported, liable to pay the VAT mentioned on the invoice."
+  },
+  {
+    "invoice_number": "Z182401591",
+     "vendor": {
+      "name": "WESTech, spol. s r.o.",
+      "address": "Stará Vajnorská 17, Bratislava, 831 04, Slovakia",
+      "reg_num": "35796111",
+      "vat_id": "SK2020245557",
+       "vat_id_sk": "2020245557",
+      "phone": "+421 2 4445 4090",
+      "bank": "ČSOB, a.s. (HUF)",
+      "email": "rma@westech.sk",
+      "swift": "CEKOSKBX",
+      "residence": "WESTech, spol. s r.o., Stará Vajnorská 17, Bratislava, 831 04",
+      "account": "SK5075000000001025050623",
+       "vs": "182401591",
+       "cs": "0008"
+    },
+    "customer": {
+      "id": "434515",
+      "name": "WESTech HU Kft.",
+      "address": "Váci út 91 IV. Emelet Budapest, Hungary",
+      "reg_num": "0109978684",
+      "phone": "+36303636614",
+      "vat_id": "HU23807341",
+      "email": "horvath@westech.hu"
+    },
+     "delivery_address": {
+      "name": "APPSolute Kft.",
+      "address": "Tartsay Vilmos utca 26., Budapest, 1126",
+      "phone": "+36203666999"
+    },
+    "dates": {
+      "lay_out_date": "26.7.2024",
+      "taxable_feeding_date": "26.7.2024",
+      "due_date": "24.9.2024"
+    },
+    "payment": {
+      "method": "Wire Transfer",
+      "transport": "GLS - bez dokladov",
+       "created_by": "B2C HU Webservice",
+      "invoiced": "without VAT",
+      "order_no": "1102436725 (COR2400982)"
+    },
+    "items": [
+      {
+        "name": "DJI Air 3 Fly More Combo (DJI RC 2)",
+        "code": "GTDJICPMA0000069304HU",
+        "warranty_period": "12 month",
+        "serial_numbers": [
+          "1581F6N8A244KML3RPZ5"
+        ],
+        "quantity": 1,
+        "weight_kg": 0.595,
+        "price_per_unit_without_fees_without_vat": 424913.562,
+         "price_with_fees_without_vat": 424913.56,
+        "vat_percent": "0 %",
+        "total": 424913.56
+      }
+    ],
+    "total_value_huf": 424914.00,
+    "pre_paid": 0.00,
+    "total_to_be_paid": 424914.00,
+    "total_weight_kg": 0.595,
+     "vat_exemption_text": "Dodanie tovarov a služieb je oslobodené od dane z pridanej hodnoty podľa § 43 zákona č. 222/2004 Z.z. zo dňa 6.4.2004. Povinnosť priznať DPH prechádza na kupujúceho.",
+     "eu_directive_text": "According to the title  IV, chapter 2,article 21,  of the directive of the European comitee n.112/2006/EC, is the consignee of the goods which is mentioned on the invoice, or other person, which si designated or accepted by the EU member state into which the goods are imported, liable to pay the VAT mentioned on the invoice."
+  }
+]
