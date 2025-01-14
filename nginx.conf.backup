@@ -17,16 +17,16 @@ http {
     keepalive_timeout  65;
 
     server {
-        listen 0.0.0.0:9000;  # Módosítva
+        listen 9000;  # Módosítva 8080-ról
         server_name n8n.ipbm.hu;
 
         location / {
-            return 301 https://$host:9443$request_uri;
+            return 301 https://$host:9443$request_uri;  # Port módosítva 8443-ról
         }
     }
 
     server {
-        listen 0.0.0.0:9443 ssl;  # Módosítva
+        listen 9443 ssl;  # Módosítva 8443-ról
         server_name n8n.ipbm.hu;
 
         ssl_certificate /etc/letsencrypt/live/n8n.ipbm.hu/fullchain.pem;
