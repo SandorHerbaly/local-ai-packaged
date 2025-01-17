@@ -5,3 +5,4 @@ privkey*
 cert*
 chain*
 fullchain*
+.env
