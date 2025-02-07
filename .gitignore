@@ -6,3 +6,12 @@ cert*
 chain*
 fullchain*
 .env
+
+# Docker related
+docker-compose.yml
+docker-compose.*.yml
+*.compose.yml
+Dockerfile
+
+# JSON files
+*.json

@@ -1,0 +1,10 @@
+{
+  "parameters": {
+    "options": {}
+  },
+  "type": "n8n-nodes-base.splitInBatches",
+  "typeVersion": 3,
+  "id": "826e9819-8eeb-4807-8b3a-d743e456c5fc",
+  "name": "Loop Over Items",
+  "onError": "continueRegularOutput"
+}

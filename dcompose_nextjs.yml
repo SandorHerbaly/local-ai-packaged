@@ -1,3 +1,5 @@
+version: "3.9"
+
 volumes:
   n8n_storage:
   postgres_storage:
@@ -5,7 +7,7 @@ volumes:
   qdrant_storage:
   open-webui:
   flowise:
-  excel-invoice-processor:
+  nextjs: # Új volume a Next.js számára
 
 networks:
   demo:
@@ -32,8 +34,8 @@ services:
     networks: ['demo']
     restart: unless-stopped
     ports:
-      - "9000:9000"
-      - "9443:9443"
+      - "9000:9000"  # módosítva 8080:8080-ról
+      - "9443:9443"  # módosítva 8443:8443-ról
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./letsencrypt:/etc/letsencrypt
@@ -58,7 +60,7 @@ services:
     ports:
       - 3001:3001
     extra_hosts:
-      - "host.docker.internal:host-gateway"        
+      - "host.docker.internal:host-gateway"
     volumes:
       - ~/.flowise:/root/.flowise
     entrypoint: /bin/sh -c "sleep 3; flowise start"
@@ -77,16 +79,16 @@ services:
 
   postgres:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ./ # A PostgreSQL Dockerfile a LOCAL-AI-PACKAGED mappában van
+      dockerfile: ./Dockerfile # A PostgreSQL Dockerfile neve
     networks: ['demo']
     restart: unless-stopped
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=20Postgre14!
-      - POSTGRES_DB=n8n
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
     volumes:
       - postgres_storage:/var/lib/postgresql/data
     healthcheck:
@@ -142,17 +144,26 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
-  excel-invoice-processor:
+  nextjs: # Új szolgáltatás a Next.js számára
     build:
-      context: ./excel-invoice-processor
-      dockerfile: Dockerfile
+      context: ./excel-invoice-processor # A Next.js projekt gyökérkönyvtára
+      dockerfile: ./excel-invoice-processor/Dockerfile # A Next.js Dockerfile neve
     networks: ['demo']
-    container_name: excel-invoice-processor
     ports:
-      - "3002:3000"
-    environment:
-      - DATABASE_URL=postgresql://postgres:20Postgre14!@postgres:5432/n8n
+      - "3002:3000" # Kívülről a 3002-es porton lesz elérhető
+    volumes:
+      - nextjs:/app/.next # Persistáljuk a .next mappát
     depends_on:
-      postgres:
-        condition: service_healthy
-    restart: unless-stopped
+      - postgres # Ha szükséged van az adatbázisra
+    environment:
+      - POSTGRES_URL=postgres://postgres:20Postgre14!@postgres:5432/n8n # Adatbázis URL a containeren belül
+      - DATABASE_URL=postgresql://postgres:20Postgre14!@postgres:5432/n8n
+
+  qdrant:
+    image: qdrant/qdrant
+    container_name: qdrant
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    ports:
+      - 6333:6333
+    networks: ['demo']

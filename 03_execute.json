@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "workflowId": {
+      "value": "PFJcNIWodIJPkB4J",
+      "mode": "list"
+    },
+    "mode": "each",
+    "options": {}
+  },
+  "type": "n8n-nodes-base.executeWorkflow",
+  "typeVersion": 1.1,
+  "id": "f2c0544a-eda0-4c14-bccd-c1584d7ac125",
+  "name": "Execute Workflow",
+  "alwaysOutputData": true,
+  "retryOnFail": true,
+  "onError": "continueRegularOutput"
+}

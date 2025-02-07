@@ -1,0 +1,7 @@
+{
+  "parameters": {},
+  "type": "n8n-nodes-base.manualTrigger",
+  "typeVersion": 1,
+  "id": "0738b2ca-7298-4d44-a2df-df0f3d9c9139",
+  "name": "When clicking 'Test workflow'"
+}
