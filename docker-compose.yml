@@ -9,7 +9,7 @@ volumes:
 
 networks:
   demo:
-    driver: bridge
+    external: true    # Ez jelzi, hogy egy már létező hálózatot használunk
 
 x-n8n: &service-n8n
   image: n8nio/n8n:latest
