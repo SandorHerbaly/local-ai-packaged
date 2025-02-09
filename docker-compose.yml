@@ -152,6 +152,10 @@ services:
       - "3002:3000"
     environment:
       - DATABASE_URL=postgresql://postgres:20Postgre14!@postgres:5432/n8n
+      - WATCHPACK_POLLING=true    
+    volumes:                      
+      - ./excel-invoice-processor:/app
+      - /app/node_modules
     depends_on:
       postgres:
         condition: service_healthy
