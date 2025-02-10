@@ -1,3 +1,5 @@
+version: '3.9'
+
 volumes:
   n8n_storage:
   postgres_storage:
@@ -58,7 +60,7 @@ services:
     ports:
       - 3001:3001
     extra_hosts:
-      - "host.docker.internal:host-gateway"        
+      - "host.docker.internal:host-gateway"
     volumes:
       - ~/.flowise:/root/.flowise
     entrypoint: /bin/sh -c "sleep 3; flowise start"
@@ -86,7 +88,7 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=20Postgre14!
-      - POSTGRES_DB=n8n
+      - POSTGRES_DB=eip_db  # **MÓDOSÍTÁS: eip_db adatbázis név használata**
     volumes:
       - postgres_storage:/var/lib/postgresql/data
     healthcheck:
@@ -151,12 +153,12 @@ services:
     ports:
       - "3002:3000"
     environment:
-      - DATABASE_URL=postgresql://postgres:20Postgre14!@postgres:5432/n8n
-      - WATCHPACK_POLLING=true    
-    volumes:                      
+      - DATABASE_URL=postgresql://postgres:20Postgre14!@postgres:5432/eip_db # **MÓDOSÍTÁS: eip_db adatbázis név használata**
+      - WATCHPACK_POLLING=true
+    volumes:
       - ./excel-invoice-processor:/app
       - /app/node_modules
-    depends_on:
+    depends_on: # **ÚJ: függőség hozzáadása**
       postgres:
         condition: service_healthy
     restart: unless-stopped
