@@ -8,6 +8,7 @@ volumes:
   open-webui:
   flowise:
   excel-invoice-processor:
+  product_images_storage:  # Dedikált volume a képeknek
 
 networks:
   demo:
@@ -29,26 +30,27 @@ x-n8n: &service-n8n
     - postgres
 
 services:
-  #  nginx:
-  #    image: nginx:latest
-  #    networks: ['demo']
-  #    restart: unless-stopped
-  #    ports:
-  #      - "9000:9000"
-  #      - "9443:9443"
-  #    volumes:
-  #      - ./nginx.conf:/etc/nginx/nginx.conf
-  #      - ./letsencrypt:/etc/letsencrypt
-  #      - ./nginx/certbot:/var/www/certbot
-  #    depends_on:
-  #      - n8n
+  nginx:
+    image: nginx:latest
+    networks: ['demo']
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+      - "9443:9443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./letsencrypt:/etc/letsencrypt
+      - ./nginx/certbot:/var/www/certbot
+      - product_images_storage:/var/www/images  # Képek megosztott volume
+    depends_on:
+      - excel-invoice-processor
 
-  #  certbot:
-  #    image: certbot/certbot
-  #    networks: ['demo']
-  #    entrypoint: ["tail", "-f", "/dev/null"]
-  #    volumes:
-  #      - ./letsencrypt:/etc/letsencrypt
+  certbot:
+    image: certbot/certbot
+    networks: ['demo']
+    entrypoint: ["tail", "-f", "/dev/null"]
+    volumes:
+      - ./letsencrypt:/etc/letsencrypt
 
   #  flowise:
   #    image: flowiseai/flowise
@@ -108,9 +110,11 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:20Postgre14!@postgres:5432/eip_db
       - WATCHPACK_POLLING=true
+      - IMAGE_SERVER_URL=http://nginx:9000  # Új környezeti változó a képkiszolgáló URL-jéhez
     volumes:
       - ./excel-invoice-processor:/app
       - /app/node_modules
+      - product_images_storage:/app/storage/images  # Megosztott volume a képeknek
     depends_on:
       postgres:
         condition: service_healthy
