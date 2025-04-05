@@ -115,6 +115,7 @@ services:
       - ./excel-invoice-processor:/app
       - /app/node_modules
       - product_images_storage:/app/storage/images  # Megosztott volume a képeknek
+      - /var/run/docker.sock:/var/run/docker.sock  # Docker daemon socket megosztása
     depends_on:
       postgres:
         condition: service_healthy
