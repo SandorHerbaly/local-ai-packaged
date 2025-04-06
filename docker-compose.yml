@@ -9,6 +9,7 @@ volumes:
   flowise:
   excel-invoice-processor:
   product_images_storage:  # Dedikált volume a képeknek
+  shared_images:  # Megosztott volume a képeknek a Next.js és Nginx között
 
 networks:
   demo:
@@ -41,7 +42,7 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./letsencrypt:/etc/letsencrypt
       - ./nginx/certbot:/var/www/certbot
-      - product_images_storage:/var/www/images  # Képek megosztott volume
+      - shared_images:/var/www/images  # Módosítva: shared_images használata
     depends_on:
       - excel-invoice-processor
 
@@ -111,10 +112,11 @@ services:
       - DATABASE_URL=postgresql://postgres:20Postgre14!@postgres:5432/eip_db
       - WATCHPACK_POLLING=true
       - IMAGE_SERVER_URL=http://nginx:9000
+      - LINKS_IMAGES_PATH=/app/storage/images/crawler  # Fontos: Ez a környezeti változó már helyesen van beállítva
     volumes:
       - ./excel-invoice-processor:/app
       - /app/node_modules
-      - product_images_storage:/app/storage/images  # Megosztott volume a képeknek
+      - shared_images:/app/storage/images  # Módosítva: shared_images használata
       - /var/run/docker.sock:/var/run/docker.sock  # Docker daemon socket megosztása
     depends_on:
       postgres:
