@@ -44,7 +44,6 @@ services:
       - ./letsencrypt:/etc/letsencrypt
       - ./nginx/certbot:/var/www/certbot
       - shared_images:/var/www/images  # Módosítva: shared_images használata
-      - invoicer_files:/var/www/invoicer_files  # Új volume az invoicer fájlok tárolásához
       - ./nginx_invoicer_files:/var/www/invoicer_files  # Nginx invoicer fájlok helyi mappára kötése
     depends_on:
       - excel-invoice-processor
