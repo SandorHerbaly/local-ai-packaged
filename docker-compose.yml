@@ -182,7 +182,7 @@ services:
     networks: ['demo']
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
-      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_DEFAULT_PASSWORD: 20Pgadmin14!
     ports:
       - "8088:80"
     volumes:
