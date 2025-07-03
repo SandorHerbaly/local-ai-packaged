@@ -13,6 +13,7 @@ volumes:
   invoicer_files:  # Új volume az Invoicer fájlok tárolásához
   ssh_config:  # SSH szerver konfigurációs fájlok
   pgadmin_data:  # Külön volume a pgAdmin adatainak
+  invoicer_files_shared:  # Közös volume a PDF fájloknak
 
 networks:
   demo:
@@ -46,7 +47,7 @@ services:
       - ./letsencrypt:/etc/letsencrypt
       - ./nginx/certbot:/var/www/certbot
       - shared_images:/var/www/images  # Módosítva: shared_images használata
-      - ./nginx_invoicer_files:/var/www/invoicer_files  # Nginx invoicer fájlok helyi mappára kötése
+      - invoicer_files_shared:/var/www/invoicer_files  # Közös volume használata
     depends_on:
       - excel-invoice-processor
 
@@ -123,6 +124,7 @@ services:
       - /app/node_modules
       - shared_images:/app/storage/images  # Módosítva: shared_images használata
       - /var/run/docker.sock:/var/run/docker.sock  # Docker daemon socket megosztása
+      - invoicer_files_shared:/app/nginx_invoicer_files  # Közös volume használata
     depends_on:
       postgres:
         condition: service_healthy
